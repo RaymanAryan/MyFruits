@@ -39,7 +39,7 @@ fun FruitCard(fruit: Fruit, modifier: Modifier = Modifier) {
             if(isClicked.value) {
                 HorizontalDivider(modifier = Modifier.height(8.dp))
                 Text(text = "Nutrition:", style = MaterialTheme.typography.titleMedium)
-                Text(text = "Genus: ${fruit.nutritions.calories ?: ""}")
+                Text(text = "Calories: ${fruit.nutritions.calories ?: ""}")
                 Text(text = "Fat: ${fruit.nutritions.fat ?: ""}")
                 Text(text = "Sugar: ${fruit.nutritions.sugar ?: ""}")
                 Text(text = "Carbohydrates: ${fruit.nutritions.carbohydrates ?: ""}")

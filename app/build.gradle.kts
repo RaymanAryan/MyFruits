@@ -66,22 +66,22 @@ dependencies {
     // Hilt for Dependency Injection
     // Hilt simplifies dependency injection in Android applications.
     // It helps manage dependencies across different components efficiently.
-    implementation("com.google.dagger:hilt-android:2.55")
+    implementation(libs.hilt.android)
 
     // Hilt Compiler
     // The compiler generates necessary code for Hilt annotations.
     // Since you're using Kotlin, you need Kotlin Symbol Processing (KSP).
-    ksp("com.google.dagger:hilt-compiler:2.55")
+    ksp(libs.hilt.compiler)
 
     // Hilt + Navigation for Jetpack Compose
     // This library allows seamless integration of Hilt with Jetpack Compose's Navigation Component.
-    implementation("androidx.hilt:hilt-navigation-compose:1.0.0")
+    implementation(libs.androidx.hilt.navigation.compose)
 
     // Gson for JSON parsing
-    implementation("com.google.code.gson:gson:2.12.1")
+    implementation(libs.gson)
     //Retrofit(Main)
-    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation(libs.retrofit)
 
     // Retrofit Converter for Gson
-    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation(libs.converter.gson)
 }
